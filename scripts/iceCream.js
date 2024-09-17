@@ -8,7 +8,8 @@ export const iceCreamList = () => {
     for(const iceCream of database.iceCream){
         iceCreamHTML += `
         <div class="ice-cream-card">
-            <div>${iceCream.image}<div>
+            
+            <img src=${iceCream.image} alt= ${iceCream.name}>
 
             <h3>
                  ${iceCream.name}
