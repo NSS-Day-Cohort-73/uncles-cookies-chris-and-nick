@@ -1,7 +1,7 @@
 import {database} from "./database"
 
 export const generateCookies = () => {
-    cookieHTML = ''
+    let cookieHTML = ''
     
     for (const item of database.cookies) {
         cookieHTML += `
