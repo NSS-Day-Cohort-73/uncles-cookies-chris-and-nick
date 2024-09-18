@@ -7,8 +7,10 @@ export const generateCookies = () => {
         cookieHTML += `
         <div class="cookie-card">
             <img src="${item.img}" alt="${item.name} Cookie">
-            <h3>${item.name}</h3>
-            <p>${item.description}</p>
+            <div class="cookie-description">
+                <h3>${item.name}</h3>
+                <p>${item.description}</p>
+            </div>
         </div>    
         `
     }

@@ -6,7 +6,7 @@ let cookieHTML = generateCookies()
 let iceCreamHTML = iceCreamList()
 
 // select HTML elements
-let cookieDOM = document.querySelector(".cookie-box")
+let cookieDOM = document.querySelector(".cookie-container")
 let iceCreamDOM = document.querySelector(".ice-cream-container")
 
 // update them with the HTML strings
