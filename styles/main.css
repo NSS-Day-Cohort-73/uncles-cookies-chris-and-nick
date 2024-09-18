@@ -2,16 +2,26 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
 }
 
 .cookies-and-icecream {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    
+    border: solid grey;
+
 }
 
 .cookie-box {
     display: flex;
     flex-direction: column;
+    align-items: space-around;
+    width: 48%;
+}
+
+.cookie-card img{
+    width: 20rem;
 }
 
 .cookie-container {
@@ -22,6 +32,7 @@
 .ice-cream-box {
     display: flex;
     flex-direction: column;
+    width: 48%;
 }
 
 .ice-cream-container {
