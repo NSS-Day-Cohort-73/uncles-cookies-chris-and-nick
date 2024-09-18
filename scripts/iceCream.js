@@ -21,4 +21,4 @@ export const iceCreamList = () => {
         </div>`
     }
     return iceCreamHTML
-    }
+}
