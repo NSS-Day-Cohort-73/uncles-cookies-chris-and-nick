@@ -10,14 +10,15 @@ export const iceCreamList = () => {
         <div class="ice-cream-card">
             
             <img src="${iceCream.img}" alt= "${iceCream.name}">
+            <div class="ice-cream-description">
+                <h3>
+                    ${iceCream.name}
+                </h3>
 
-            <h3>
-                 ${iceCream.name}
-            </h3>
-
-            <p>
-                ${iceCream.description}
-            </p>
+                <p>
+                    ${iceCream.description}
+                </p>
+            </div>
         </div>`
     }
     return iceCreamHTML
