@@ -1,3 +1,42 @@
+:root{
+--light-pink: #ffb0db;
+--light-blue:#b0dbff;
+--purple: #a6edff;
+--light-purple: #f5e0ff;
+--blue: #3f92ff;
+--pink: #ff94ca;
+--dark-pink: #77003c;
+--dark-blue: #13096d;
+}
+
+body{
+    background-color: var(--purple);
+}
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: normal;
+    color: #ae00ff;
+    background-color: var(--light-purple);
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: .25rem .25rem 1rem;
+
+}
+
+h2, h3 {
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #ae00ff;
+    background-color: var(--light-purple);
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: .25rem .25rem 1rem;
+}
+
+p {
+    font-style: italic;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -8,16 +47,36 @@
 .cookies-and-icecream {
     display: flex;
     justify-content: space-around;
-    
-    border: solid grey;
 
 }
+
+/*COOKIES*/
 
 .cookie-box {
     display: flex;
     flex-direction: column;
-    align-items: space-around;
+    align-items: center;
     width: 48%;
+    
+}
+
+.cookie-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.cookie-card {
+    display: flex;
+    border: dashed var(--light-blue);
+    margin: 1rem;
+    background-color: var(--blue);
+    color: var(--dark-blue);
+    padding: 1rem;
+    border-radius: 2rem;
+    box-shadow: .25rem .25rem 1rem;
 }
 
 .cookie-card img{
@@ -29,9 +88,40 @@
     flex-direction: column;
 }
 
+/*ICE CREAM*/
+
+.ice-cream-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    
+}
+
+.ice-cream-card {
+    display: flex;
+    border: dashed var(--light-pink);
+    margin: 1rem;
+    background-color: var(--pink);
+    color: var(--dark-pink);
+    padding: 1rem;
+    border-radius: 2rem;
+    box-shadow: .25rem .25rem 1rem;
+}
+
+
+
+.ice-cream-card img{
+    width: 20rem;
+}
+
+
+
 .ice-cream-box {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 48%;
 }
 
