@@ -70,7 +70,7 @@ p {
 
 .cookie-card {
     display: flex;
-    border: dashed var(--light-blue);
+    border: dotted var(--light-blue);
     margin: 1rem;
     background-color: var(--blue);
     color: var(--dark-blue);
