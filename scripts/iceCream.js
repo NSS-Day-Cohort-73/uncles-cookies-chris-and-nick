@@ -9,7 +9,7 @@ export const iceCreamList = () => {
         iceCreamHTML += `
         <div class="ice-cream-card">
             
-            <img src=${iceCream.image} alt= ${iceCream.name}>
+            <img src="${iceCream.img}" alt= "${iceCream.name}">
 
             <h3>
                  ${iceCream.name}
