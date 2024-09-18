@@ -4,8 +4,9 @@ import {database} from "./database.js"
 // for each element of the array create an HTML string for each property and then concatenate them together and return
 export const iceCreamList = () => {
     
+    let alphabeticalIceCream = database.iceCream.sort((elementOne,elementTwo) => elementOne.name.localeCompare(elementTwo.name))
     let iceCreamHTML = ""
-    for(const iceCream of database.iceCream){
+    for(const iceCream of alphabeticalIceCream){
         iceCreamHTML += `
         <div class="ice-cream-card">
             
