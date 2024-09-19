@@ -1,22 +1,32 @@
-import {database} from "./database.js"
-
-export const generateCookies = () => {
+export const generateHTML = (arr, type,) => {
     
-    let alphabeticalCookies = database.cookies.sort((elementOne,elementTwo) => elementOne.name.localeCompare(elementTwo.name))
+    let alphabetical = arr.sort((elementOne,elementTwo) => elementOne.name.localeCompare(elementTwo.name))
     
-    let cookieHTML = ''
+    let typeHTML = ''
     
-    for (const item of alphabeticalCookies) {
-        cookieHTML += `
-        <div class="cookie-card">
-            <img src="${item.img}" alt="${item.name} Cookie">
-            <div class="cookie-description">
+    for (const item of alphabetical) {
+        typeHTML += `
+        <div class="${type} card">
+            <img src="${item.img}" alt="${item.name}">
+            <div class="description">
                 <h3>${item.name}</h3>
                 <p>${item.description}</p>
             </div>
         </div>    
         `
     }
-    return cookieHTML
+    return typeHTML
 
+}
+
+export const generateSpecials = (item, type)=> {
+    return `
+        <div class="${type} card">
+            <img src="${item.img}" alt="${item.name}">
+            <div class="description">
+                <h3>${item.name}</h3>
+                <p>${item.description}</p>
+            </div>
+        </div>    
+        `
 }

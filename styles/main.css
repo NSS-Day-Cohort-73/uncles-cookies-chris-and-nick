@@ -11,6 +11,7 @@
 
 body{
     background-color: var(--purple);
+    margin: 0;
 }
 h1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -37,6 +38,26 @@ p {
     font-style: italic;
 }
 
+.background{
+    background-color: #000000a2;
+    position: fixed;
+    width:100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.daily-special{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hidden{
+    display: none;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -50,61 +71,33 @@ p {
 
 }
 
-/*COOKIES*/
 
-.cookie-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 48%;
-    
-}
 
-.cookie-description {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-}
-
-.cookie-card {
-    display: flex;
-    border: dotted var(--light-blue);
-    margin: 1rem;
+.cookies {
     background-color: var(--blue);
     color: var(--dark-blue);
-    padding: 1rem;
-    border-radius: 2rem;
-    box-shadow: .25rem .25rem 1rem;
+    border: dotted var(--light-blue);
+}
+.ice-cream {
+    background-color: var(--pink);
+    color: var(--dark-pink);
+    border: dashed var(--light-pink);
 }
 
-.cookie-card img{
-    width: 20rem;
-}
-
-.cookie-container {
-    display: flex;
-    flex-direction: column;
-}
-
-/*ICE CREAM*/
-
-.ice-cream-description {
+.description {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 1rem;
+    width: 30rem;
     
 }
 
-.ice-cream-card {
+.card {
     display: flex;
-    border: dashed var(--light-pink);
+    justify-content: space-around;
     margin: 1rem;
-    background-color: var(--pink);
-    color: var(--dark-pink);
     padding: 1rem;
     border-radius: 2rem;
     box-shadow: .25rem .25rem 1rem;
@@ -112,20 +105,20 @@ p {
 
 
 
-.ice-cream-card img{
+img {
     width: 20rem;
 }
 
 
 
-.ice-cream-box {
+.box {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 48%;
 }
 
-.ice-cream-container {
+.inner-container {
     display: flex;
     flex-direction: column;
 }
