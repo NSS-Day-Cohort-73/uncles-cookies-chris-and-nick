@@ -1,14 +1,27 @@
-import { iceCreamList } from "./iceCream.js";
-import { generateCookies } from "./cookies.js"
+import { generateHTML, generateSpecials } from "./cookies.js"
+import {database} from "./database.js"
+import { randomize } from "./randomizer.js"
 
 // initialize HTML strings
-let cookieHTML = generateCookies()
-let iceCreamHTML = iceCreamList()
+
+const cookieHTML = generateHTML(database.cookies, "cookies")
+const iceCreamHTML = generateHTML(database.iceCream, "ice-cream")
+
 
 // select HTML elements
-let cookieDOM = document.querySelector(".cookie-container")
-let iceCreamDOM = document.querySelector(".ice-cream-container")
+const background = document.getElementById('background')
+const specials = document.querySelector('.special-selection')
+const cookieDOM = document.querySelector("#cookie-container")
+const iceCreamDOM = document.querySelector("#ice-cream-container")
+
+//randomize specials
+const cookieSpecial = randomize(database.cookies)
+const iceCreamSpecial = randomize(database.iceCream)
 
 // update them with the HTML strings
 cookieDOM.innerHTML = cookieHTML
 iceCreamDOM.innerHTML = iceCreamHTML
+specials.innerHTML = generateSpecials(cookieSpecial, "cookies") + generateSpecials(iceCreamSpecial, "ice-cream")
+
+//add event listener to close daily specials
+background.addEventListener('click', ()=>{background.classList.add('hidden')})
